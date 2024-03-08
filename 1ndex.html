@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://gi.qijieya.cn/op.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <ul class="downloadcard">
+            <p style="font-size: 3rem;">Root相关资料</p>
+            <li>
+                <div>
+                    <h2>adb命令</h2>
+                    <p>查看刷机常用的命令</p>
+                    <a href="#a&f">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>Root教程</h2>
+                    <p>较为详细的root教程</p>
+                    <a href="#root">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>注意事项</h2>
+                    <p>一些需要注意的事情</p>
+                    <a href="#warnings">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>通杀解锁</h2>
+                    <p>通杀一切BL锁和账户锁</p>
+                    <a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4?authorization=bce-auth-v1/40f207e648424f47b2e3dfbb1014b1a5/2021-07-12T02:14:24Z/-1/host/530146520a1c89fb727fbbdb8a0e0c98ec69955459aed4b1c8e00839187536c9">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>???</h2>
+                    <p>???</p>
+                    <a href="#">
+                        <button class="btn-download" type="button" onclick="genshinLaunch()">???</button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <ul class="downloadcard">
+            <p style="font-size: 3rem;">隐藏环境</p>
+            <li>
+                <div>
+                    <h2>隐藏方案</h2>
+                    <p>适用于德尔塔</p>
+                    <a href="#hided">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>隐藏方案</h2>
+                    <p>适用于阿尔法</p>
+                    <a href="#hidea">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>MOMO</h2>
+                    <p>针对momo检测隐藏</p>
+                    <a href="#hidemomo">
+                        <button class="btn-download" type="button">查阅</button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="popup" id="a&f">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>adb和fastboot</h1>
+                <div class="main-text">
+                    <p>这里会列出在刷机过程中比较常用的adb和fastboot命令
+                        <br><br>adb全称Android Debug Bridge,在进入安卓系统后方可使用,部分rec也是可以用adb的。
+                        <br><br>fastboot是用于设备刷写镜像的一个模式,一般来说刷个root或线刷用这个就行。
+                        <br><a target="_blank" href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">前往谷歌官方文档查看</a>
+                        <br><br>adb reboot <重启到模式> 括号处填入需要进入的模式即可在开机状态下立刻进入,比如 recovery 进入rec,bootloader进入fastboot。
+                        <br><br>adb install <安装包路径> 括号处填入安装包路径即可把安装包推送到手机并安装这个app。
+                        <br><br>adb uninstall <包名> 括号处填入需要卸载的应用包名即可卸载这个app。
+                        <br><br>adb devices 查看 adb 连接设备。
+                        <br><br>adb shell 进入终端,这里的终端和mt管理器的一样,也具有危险性,不要执行恶意代码！
+                        <br><br>fastboot devices 查看已连接的fastboot设备。
+                        <br><br>fastboot flash <分区><镜像路径> 分区填入需要刷入的分区,比如刷root就要刷boot分区,路径填入文件路径,在win11可以右键直接复制文件路径。
+                        <br><br>fastboot reboot 从fastboot重启手机。
+                        <br><br>fastboot oem lock 重新锁上bootloader。
+                        <br><br>fastboot boot <镜像路径>用来临时启动twrp或boot,只会临时启动,不会刷写到任何分区,但是联发科大部分机型都不支持！
+                        <br><br>fastboot getvar current-slot 查看当前a/b槽位
+                        <br><br>fastboot set_active <要切换的插槽> 切换当前的槽位,输入a/b。
+                        <br><br>注意事项:临时启动这个命令大部分联发科机型都是不支持的！联发科机型请不要乱刷东西,联发科是极其容易变转的！这里只会记录部分比较常用的命令,如有错误可以联系我更正,会持续更新......
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="popup" id="root">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>Root教程</h1>
+                <div class="main-text">
+                    <p>这里会较为详细的讲述root的教程
+                        <br><br>首先得了解root是什么
+                        <br>root,是一个权限,手机中的超级用户权限,具有读写根目录的权限,可以操作系统进程,注入内存等操作。
+                        <br><a target="_blank" href="https://baike.baidu.com/item/root%E6%9D%83%E9%99%90">前往百度百科查看</a>
+                        <br><br>Root方式选择:
+                        <br><br>magisk:这是为安卓深度定制的su管理软件,因为其强大的影响力,深受机佬的喜爱,也诞生了许多的版本分支,其中有阿尔法(Alpha)、德尔塔(Delta/Kitsune),
+                        除此之外还有各路大神制作针对某个机型的magisk版本,下面会讲到如何选择magisk版本。
+                        <br><a target="_blank" href="https://baike.baidu.com/item/Magisk/56145914">前往百度百科查看</a>
+                        <br><br>Kernel su:这个root方式是近些年兴起的一种,他的工作方式和magisk非常不同,ksu的工作方式是在内核操作,所以非常难被检测到,因其强大的隐藏性,也是
+                        不少人的选择,但是相对magsik来说,有一个非常致命的缺点,就是模块的兼容性非常差,挂载也有问题,所以一般来说是日用选择ksu,而极客更偏向于magisk,也许作者以后会完善。
+                        <br><a target="_blank" href="https://kernelsu.org/zh_CN/">前往Kernel su官网查看</a>
+                        <br><br>Magisk安装教程:
+                        <br>1.准备好你现在系统版本对应的boot,可从线刷包/卡刷包里面提取,小米设备可以去<a target="_blank"
+                            href="https://xiaomirom.com">Xiaomirom</a>查看
+                        <br>2.打开你的magisk,选择安装,选择修补,然后选择你提取出来的boot,完成后把得出来的boot传到电脑上
+                        <br>3.手机进入fastboot模式,开机按住音量-和电源键即可进入,也可以开机状态下使用adb reboot bootloader命令进入
+                        <br>4.连接电脑,打开你的adb,输入fastboot flash boot 修补boot的路径,等待刷入完成即可,如果不懂请查看adb&fastboot常用命令
+                        <br><br>注意,在新机型中需要修补的应该是init_boot,例如小米13系列,具体请查询!
+                        <br><br>Kernel su安装方式:
+                        <br>1.确认你手机的内核版本,在手机的全部参数滑到底下即可看到,需要版本大于5.xx.xxx,否则请使用面具
+                        <br>2.到<a target="_blank"
+                            href="https://kkgithub.com/tiann/KernelSU/releases">Ksu的Releases页面</a>找到你对应的内核版本
+                        <br>3.下载文件后解压出里面的boot镜像
+                        <br>4.手机进入fastboot模式,开机按住音量-和电源键即可进入,也可以开机状态下使用adb reboot bootloader命令进入
+                        <br>5.连接电脑,打开你的adb,输入fastboot flash boot 解压boot的路径,等待刷入完成即可,如果不懂请查看adb&fastboot常用命令
+                        <br><br>
+                    <p style="color: red;">注意:联发科机型必须谨慎操作,不然各种姿势变砖和丢数据,天玑1200以下机型magisk无法直接更新,需要自己修补后重新刷入!</p>
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="warnings">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>注意事项</h1>
+                <div class="main-text">
+                    <p style="color: red;">
+                        <br>这里会列出一些需要注意的东西
+                        <br>1.联发科机型必须要注意的你的内核版本刷twrp,不然会变砖!
+                        <br>2.联发科天玑1200以下机型不能使用magisk自带的直接更新来更新面具版本,因为有分区保护,需要进入fastboot重刷
+                        <br>3.联发科天玑8200以上出厂的安卓13新机不能直接刷kernel su的通用内核gki,请先用面具root后使用ak3卡刷
+                        <br>4.联发科不要随意使用更改system下app的magisk模块,稍有差池你的data就不保啦
+                        <br>未完待续....
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="hided">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>隐藏环境-德尔塔</h1>
+                <div class="main-text">
+                    <p>
+                        <p style="color: red;">目前不存在完美隐藏,能做的也只有尽量去隐藏,遇到过不了的不要太执着!</p>
+                        <br>德尔塔最新的面具也可以过很多检测,也相对简单,非常适合小白和懒癌患者
+                        <br>德尔塔无需安装shamiko或者zmod这一类的隐藏模块
+                        <br><br>黑名单设置：
+                        <br>打开Magisk Hide,不需要开启强制SuLite,把需要隐藏的应用在下方的配置列表勾选即可
+                        <br><br>白名单设置：
+                        <br>打开Magisk Hide,开启强制SuLite,把需要root权限的应用在下方的配置列表勾选即可
+                        <br><br>自带的Zygisk已经更新为Zygisk Next,所以不需要再额外安装,请放心使用,如果还是过不了某些应用的检测还是请试试关闭自带的zygisk刷入最新
+                        zygisk next模块。检测工具推荐使用momo和native test
+                        <br><br>资源获取:
+                        <br><a target="_blank" href="https://kkgithub.com/HuskyDG/magisk-files/releases">最新版德尔塔面具</a>
+                        <br><a target="_blank" href="https://kkgithub.com/Dr-TSNG/ZygiskNext">最新版Zygisk next</a>
+                        <br><a target="_blank" href="https://kkgithub.com/Dr-TSNG/NativeDetector/releases/tag/Neo-Minotaur">Native Test v12</a>
+                        <br>momo (以后补上)
+                        <br>native test v15 (以后补上)
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="hidea">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>隐藏环境-阿尔法</h1>
+                <div class="main-text">
+                    <p>
+                        <p style="color: red;">目前不存在完美隐藏,能做的也只有尽量去隐藏,遇到过不了的不要太执着!</p>
+                        <br>阿尔法面具的隐藏会比较麻烦,但也很容易
+                        <br>阿尔法面具不要开启自带的zygisk,必须安装Zygisk Next,虽然模块列表显示未开启zygisk,模块停用,但实际上模块是正常运行的,请放心使用
+                        <br><br>1.安装Zygisk Next
+                        <br>2.关闭面具自带的Zygisk
+                        <br>3.刷入最新的Shamiko模块
+                        <br>4.设定好你需要的Shamiko运行模式,白名单或是黑名单
+                        <br>5.重启
+                        <br><br>你也可以不选择shamiko,可以选择zmod
+                        <br><br>安装后shamiko把面具的权限也杀掉了?没关系,shamiko的开关是动态的,你只需要借助爱玩机这一类的工具去取消模块的激活,面具刷入模块或授权后重启打开就行了,
+                        嫌麻烦的我下面会提供一个快捷的shamiko开关,他可以添加磁贴到控制中心
+                        <br>如果你选择了zmod,那么记得给你的面具隐藏包名,在面具的设置里即可找到,隐藏后zmod就不会杀掉magisk的权限了,zmod只有白名单模式,没有黑名单模式
+                        <br><br>资源获取:
+                        <br><a target="_blank" href="https://kkgithub.com/Dr-TSNG/ZygiskNext">最新版Zygisk next</a>
+                        <br><a target="_blank" href="https://kkgithub.com/Dr-TSNG/NativeDetector/releases/tag/Neo-Minotaur">Native Test v12</a>
+                        <br><a target="_blank" href="https://kkgithub.com/fei-ke/Shamiko/releases/tag/v1.0">Shamiko一键开关</a>
+                        <br>momo (以后补上)
+                        <br>native test v15 (以后补上)
+                        <br>阿尔法面具 (善用你们的搜索能力)
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="hidemomo">
+        <div class="popup-inner">
+            <div class="popup__text">
+                <h1>隐藏环境-MOMO</h1>
+                <div class="main-text">
+                    <p>
+                        <p style="color: red;">目前不存在完美隐藏,能做的也只有尽量去隐藏,遇到过不了的不要太执着!</p>
+                        <br>在写了在写了
+                    </p>
+                </div>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+</body>
+
+</html>

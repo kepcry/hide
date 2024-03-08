@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.popup {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: #9191E9;
+  padding: 1rem 2rem;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  -webkit-transition: .64s ease-in-out;
+  transition: .64s ease-in-out;
+  cursor: default;
+}
+
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* max-width: 920px;
+  max-height: 600px; */
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  -webkit-transform: rotate(32deg);
+  transform: rotate(32deg);
+  -webkit-transition: .64s ease-in-out;
+  transition: .64s ease-in-out;
+  border-radius: 30px;
+  /* overflow: hidden; */
+}
+
+.popup__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+}
+
+.popup__photo img {
+  width: 100%;
+  height: 100%;
+  bottom: 25px;
+}
+
+.popup__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Noto Sans SC', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.popup__text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #0A0A0A;
+}
+
+.popup__text p {
+  font-size: .875rem;
+  color: #686868;
+  line-height: 1.5;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.popup__close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #0A0A0A;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+.btn-download {
+  color: #fff;
+  background: #00bdea;
+  border: 2px solid #fff;
+  /* padding: 11px;
+  line-height: 1; */
+  border-radius: 7px;
+  font-weight: bold;
+  font-family: 'Noto Sans SC', sans-serif;
+  transition: .64s;
+  width: 5rem;
+  height: 2rem;
+  margin-top: 1.2rem;
+}
+
+.btn-download:hover {
+  color: #00bdea;
+  background-color: #fff;
+  border-color: #00bdea;
+}
+
+.downloadcard li {
+  width: 45%;
+  height: 10rem;
+  box-shadow: 0px 0px 15px;
+  border-radius: 20px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  list-style: none;
+  float: left;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Noto Sans SC', sans-serif;
+  text-align: center;
+  background:linear-gradient(180deg,#0ebeff,#00ffee);
+}
+
+.downloadcard li div {
+  padding: 1rem;
+}
+
+.downloadcard {
+  font-family: 'Noto Sans SC', sans-serif;
+  height: 45rem;
+}
+
+.downloadcard li:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 0px 5px;
+}
+
+.main-text {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 1rem;
+}
+
+.main-text h1 {
+  text-align: center;
+}
+
+#box {
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
